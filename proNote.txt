@@ -1,0 +1,4 @@
+<!-- @php 
+        $employees=App\Models\Employee::all();
+        @endphp -->
+php artisan view:clear
