@@ -10,4 +10,4 @@ Route::post('/employees/store', [EmployeeController::class, "store"])->name('emp
 Route::get('/employees/{employee}', [EmployeeController::class, "show"])->name('employees.show');
 Route::get('/employees/{employee}/edit', [EmployeeController::class, "edit"])->name('employees.edit');
 Route::put('/employees/{employee}', [EmployeeController::class, "update"])->name('employees.update');
-Route::delete('/employees/{employee}', [EmployeeController::class, "destroy"])->name('employees.destroy');
+Route::delete('/employees/{employee}/destroy', [EmployeeController::class, "destroy"])->name('employees.destroy');

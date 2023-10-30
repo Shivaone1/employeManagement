@@ -15,7 +15,10 @@
         <input class="form-control" type="text" name="city" id="city">
         <label class="my-2" for="rote">Rote:</label>
         <input class="form-control" type="text" name="role" id="role">
-        <button type="submit" class="form-control -bottom-3 mt-3 bg-dark text-light">Create Employee</button>
+        <div class="d-flex justify-content-between">
+            <a href="{{ route('employees.index') }}" class="btn btn-dark my-2">Back</a>
+            <button type="submit" class="btn btn-primary my-2">Create Employee</button>
+        </div>
     </form>
 </div>
 

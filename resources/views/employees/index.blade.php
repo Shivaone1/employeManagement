@@ -25,8 +25,9 @@
                 <td>{{ $employee->email }}</td>
                 <td>{{ $employee->city }}</td>
                 <td>
-                    <a href="{{ route('employees.show', $employee->id) }}" class="btn btn-warning"><i class="fa fa-eye"></i></a>
-                    <a href="{{ route('employees.edit', $employee->id) }}" class="btn btn-warning"><i class="fa fa-edit"></i></a>
+                    <a href="{{ route('employees.show', $employee->id) }}" class="btn btn-success"><i class="fa fa-eye"></i></a>
+                    <a href="{{ route('employees.edit', $employee->id) }}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                    <a href="{{ route('employees.destroy', $employee->id) }}" class="btn btn-danger"><i class="fa fa-trash-alt"></i></a>
                 </td>
             </tr>
             @endforeach

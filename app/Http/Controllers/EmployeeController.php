@@ -41,7 +41,6 @@ class EmployeeController extends Controller
         }
     }
 
-
     public function show($id)
     {
         // Retrieve the employee with the given ID and pass it to the view
@@ -57,7 +56,6 @@ class EmployeeController extends Controller
 
         return view("employees.edit", compact('employee'));
     }
-
 
     public function update(Request $request, $id)
     {
