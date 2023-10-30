@@ -11,7 +11,7 @@
         <input class="form-control" type="email" name="email" id="email">
         <label class="my-2" for="mobile">Mobile:</label>
         <input class="form-control" type="number" name="mobile" id="mobile">
-        <label class="my-2" for="city">Cith:</label>
+        <label class="my-2" for="city">City:</label>
         <input class="form-control" type="text" name="city" id="city">
         <label class="my-2" for="rote">Rote:</label>
         <input class="form-control" type="text" name="role" id="role">

@@ -26,7 +26,10 @@ class EmployeeController extends Controller
         // Validate the input data before creating a new employee
         $validatedData = $request->validate([
             'name' => 'required',
+            'mobile' => 'required',
             'email' => 'required|email',
+            'city' => 'required',
+            'role' => 'required'
             // Add more validation rules for other fields as needed
         ]);
 
@@ -62,7 +65,9 @@ class EmployeeController extends Controller
         // Validate the input data before updating the employee
         $validatedData = $request->validate([
             'name' => 'required',
+            'mobile' => 'required',
             'email' => 'required|email',
+            'city' => 'required'
             // Add more validation rules for other fields as needed
         ]);
 
@@ -83,7 +88,6 @@ class EmployeeController extends Controller
         // Find the employee with the given ID and delete it
         $employee = Employee::find($id);
         $employee->delete();
-
         // Check if the deletion was successful
         if ($employee) {
             return redirect()->route('employees.index')->with('success', 'Data deleted successfully.');
